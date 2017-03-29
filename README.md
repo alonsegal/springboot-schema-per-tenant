@@ -1,7 +1,7 @@
 # springboot-schema-per-tenant
 Seed project for achieving multi-tenancy (single pooled schema-per-tenant) using SpringBoot and Hibernate as proposed in [this article](https://dzone.com/articles/spring-boot-hibernate-multitenancy-implementation). 
 
-This project assumes that you have a MySql DB (can be configured in application.properties), which has a default schema named `default_schema` and at least one additional schema with some tenant name you choose.
+This project assumes a dedicated MySql DB is reachable (can be configured in application.properties), which has a default schema named `default_schema` and at least one additional schema with some tenant name you choose.
 
 The default schema has a single table called `user_tenant_relation` and has the following structure:
 
