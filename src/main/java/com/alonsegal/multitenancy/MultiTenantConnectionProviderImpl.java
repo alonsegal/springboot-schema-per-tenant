@@ -28,8 +28,7 @@ public class MultiTenantConnectionProviderImpl implements MultiTenantConnectionP
     }
 
     @Override
-    public Connection getConnection(String tenantIdentifie) throws SQLException {
-        String tenantIdentifier = TenantContext.getCurrentTenant();
+    public Connection getConnection(String tenantIdentifier) throws SQLException {
         final Connection connection = getAnyConnection();
         try {
             if (tenantIdentifier != null) {
